@@ -21,4 +21,11 @@ echo "This is a comment demonstration.";
 echo "The result of 10 divided by 2 is " . (10 / 2) . ".";
 echo "The result of 10 modulo 3 is " . (10 % 3) . ".";
 echo "The result of 2 to the power of 3 is " . (2 ** 3) . ".";
+echo "The result of 10 incremented by 1 is " . (++$age) . ".";
+echo "The result of 10 decremented by 1 is " . (--$age) . ".";
+// calculate the area of a circle with radius 5
+$radius = 5;
+$area = pi() * $radius * $radius;
+echo "The area of a circle with radius $radius is $area.";
+
 ?>
