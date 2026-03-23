@@ -27,5 +27,9 @@ echo "The result of 10 decremented by 1 is " . (--$age) . ".";
 $radius = 5;
 $area = pi() * $radius * $radius;
 echo "The area of a circle with radius $radius is $area.";
-
+echo "The length of the string 'Hello World' is " . strlen("Hello World") . ".";
+echo "The number of words in the string 'Hello World' is " . str_word_count ("Hello World") . ".";
+echo "The reverse of the string 'Hello' is " . strrev("Hello") . ".";
+echo "The position of the first occurrence of 'o' in the string 'Hello' is " . strpos("Hello", "o") . ".";
+echo "The string 'Hello' in uppercase is " . strtoupper("Hello") . ".";
 ?>
