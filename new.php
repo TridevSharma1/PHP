@@ -32,4 +32,6 @@ echo "The number of words in the string 'Hello World' is " . str_word_count ("He
 echo "The reverse of the string 'Hello' is " . strrev("Hello") . ".";
 echo "The position of the first occurrence of 'o' in the string 'Hello' is " . strpos("Hello", "o") . ".";
 echo "The string 'Hello' in uppercase is " . strtoupper("Hello") . ".";
+echo "The string 'Hello' in lowercase is " . strtolower("Hello") . ".";
+
 ?>
