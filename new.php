@@ -33,5 +33,30 @@ echo "The reverse of the string 'Hello' is " . strrev("Hello") . ".";
 echo "The position of the first occurrence of 'o' in the string 'Hello' is " . strpos("Hello", "o") . ".";
 echo "The string 'Hello' in uppercase is " . strtoupper("Hello") . ".";
 echo "The string 'Hello' in lowercase is " . strtolower("Hello") . ".";
+// calculate the factorial of a number
+function factorial($n) {
+    if ($n == 0) {
+        return 1;
+    } else {
+        return $n * factorial($n - 1);
+    }
+}
+$number = 5;
+echo "The factorial of $number is " . factorial($number) . ".";
+// calculate the Fibonacci sequence up to a certain number
+function fibonacci($n) {
+    $fib = [0, 1];
+    for ($i = 2; $i < $n; $i++) {
+        $fib[] = $fib[$i - 1] + $fib[$i - 2];
+    }
+    return $fib;
+}
+$count = 10;
+echo "The Fibonacci sequence up to $count is: " . implode(", ", fibonacci($count)) . ".";
+// input from user
+echo "Enter a number: ";
+$handle = fopen ("php://stdin","r");
+$number = fgets($handle);
+echo "You entered: " . $number;
 
 ?>
