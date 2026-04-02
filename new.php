@@ -58,5 +58,8 @@ echo "Enter a number: ";
 $handle = fopen ("php://stdin","r");
 $number = fgets($handle);
 echo "You entered: " . $number;
+echo "Enter your name: ";
+$name = fgets($handle);
+echo "Hello, " . trim($name) . "!";
 
 ?>
