@@ -61,5 +61,18 @@ echo "You entered: " . $number;
 echo "Enter your name: ";
 $name = fgets($handle);
 echo "Hello, " . trim($name) . "!";
+echo "Enter a string: ";
+$string = fgets($handle);
+echo "The length of the string you entered is " . strlen($string) . ".";
+echo "Enter a number to calculate its square: ";
+$number = fgets($handle);
+echo "The square of the number you entered is " . ($number * $number) . ".";
+#calculate the area of a rectangle
+echo "Enter the length of the rectangle: ";
+$length = fgets($handle);
+echo "Enter the width of the rectangle: ";
+$width = fgets($handle);
+$area = $length * $width;
+echo "The area of the rectangle is " . $area . ".";
 
 ?>
