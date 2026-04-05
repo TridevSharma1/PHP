@@ -74,5 +74,14 @@ echo "Enter the width of the rectangle: ";
 $width = fgets($handle);
 $area = $length * $width;
 echo "The area of the rectangle is " . $area . ".";
+echo "Enter a number to check if it is even or odd: ";
+$number = fgets($handle);
+if ($number % 2 == 0) {
+    echo "The number you entered is even.";
+} 
+else {
+    echo "The number you entered is odd.";
+}
+
 
 ?>
