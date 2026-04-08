@@ -82,6 +82,25 @@ if ($number % 2 == 0) {
 else {
     echo "The number you entered is odd.";
 }
+echo "Enter a number to check if it is prime: ";
+$number = fgets($handle);
+function isPrime($n) {
+    if ($n <= 1) {
+        return false;
+    }
+    for ($i = 2; $i <= sqrt($n); $i++) {
+        if ($n % $i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+if (isPrime($number)) {
+    echo "The number you entered is prime.";
+} 
+else {
+    echo "The number you entered is not prime.";
+}
 
 
 ?>
