@@ -101,6 +101,18 @@ if (isPrime($number)) {
 else {
     echo "The number you entered is not prime.";
 }
+echo "Enter a string to check if it is a palindrome: ";
+$string = fgets($handle);
+function isPalindrome($str) {
+    $str = str_replace(' ', '', $str); // remove spaces
+    return $str == strrev($str);
+}
+if (isPalindrome($string)) {
+    echo "The string you entered is a palindrome.";
+} 
+else {
+    echo "The string you entered is not a palindrome.";
+}
 
 
 ?>
