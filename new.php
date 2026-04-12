@@ -115,4 +115,38 @@ else {
 }
 
 
+## making a simple calculator
+echo "Enter the first number: ";
+$num1 = fgets($handle);
+echo "Enter the second number: ";
+$num2 = fgets($handle);
+echo "Enter the operator (+, -, *, /): ";
+$operator = fgets($handle);
+switch (trim($operator)) {
+    case '+':
+        $result = $num1 + $num2;
+        break;
+    case '-':
+        $result = $num1 - $num2;
+        break;
+    case '*':
+        $result = $num1 * $num2;
+        break;
+    case '/':
+        if ($num2 != 0) {
+            $result = $num1 / $num2;
+        } else {
+            echo "Division by zero is not allowed.";
+            exit;
+        }
+        break;
+    default:
+        echo "Invalid operator.";
+        exit;
+}
+echo "The result of $num1 $operator $num2 is: " . $result . ".";
+
+
+
+
 ?>
