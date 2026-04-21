@@ -145,6 +145,22 @@ switch (trim($operator)) {
         exit;
 }
 echo "The result of $num1 $operator $num2 is: " . $result . ".";
+// fabonacci series using recursion
+function fibonacciRecursive($n) {
+    if ($n == 0) {
+        return 0;
+    } elseif ($n == 1) {
+        return 1;
+    } else {
+        return fibonacciRecursive($n - 1) + fibonacciRecursive($n - 2);
+    }
+}
+$count = 10;
+echo "The Fibonacci sequence up to $count is: ";
+for ($i = 0; $i < $count; $i++) {
+    echo fibonacciRecursive($i) . " ";
+}
+
 
 
 
