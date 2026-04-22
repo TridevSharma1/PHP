@@ -160,8 +160,19 @@ echo "The Fibonacci sequence up to $count is: ";
 for ($i = 0; $i < $count; $i++) {
     echo fibonacciRecursive($i) . " ";
 }
-
-
+// calculate the greatest common divisor (GCD) of two numbers
+function gcd($a, $b) {
+    if ($b == 0) {
+        return $a;
+    }
+    return gcd($b, $a % $b);
+}
+echo "Enter the first number to calculate GCD: ";
+$num1 = fgets($handle);
+echo "Enter the second number to calculate GCD: ";
+$num2 = fgets($handle);
+$result = gcd($num1, $num2);
+echo "The greatest common divisor of $num1 and $num2 is: " . $result . ".";
 
 
 
