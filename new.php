@@ -174,6 +174,16 @@ $num2 = fgets($handle);
 $result = gcd($num1, $num2);
 echo "The greatest common divisor of $num1 and $num2 is: " . $result . ".";
 
+// factorial using iteration
+function factorialIterative($n) {
+    $result = 1;
+    for ($i = 1; $i <= $n; $i++) {
+        $result *= $i;
+    }
+    return $result;
+}
+$number = 5;
+echo "The factorial of $number is " . factorialIterative($number) . ".";
 
 
 ?>
