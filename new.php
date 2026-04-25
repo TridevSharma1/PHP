@@ -184,6 +184,17 @@ function factorialIterative($n) {
 }
 $number = 5;
 echo "The factorial of $number is " . factorialIterative($number) . ".";
+// calculate the least common multiple (LCM) of two numbers
+function lcm($a, $b) {
+    return ($a * $b) / gcd($a, $b);
+}
+
+echo "Enter the first number to calculate LCM: ";
+$num1 = fgets($handle);
+echo "Enter the second number to calculate LCM: ";
+$num2 = fgets($handle);
+$result = lcm($num1, $num2);
+echo "The least common multiple of $num1 and $num2 is: " . $result . ".";
 
 
 ?>
