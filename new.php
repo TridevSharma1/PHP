@@ -195,6 +195,13 @@ echo "Enter the second number to calculate LCM: ";
 $num2 = fgets($handle);
 $result = lcm($num1, $num2);
 echo "The least common multiple of $num1 and $num2 is: " . $result . ".";
+// calculate the power of a number
+echo "Enter the base number: ";
+$base = fgets($handle);
+echo "Enter the exponent: ";
+$exponent = fgets($handle);
+$result = pow($base, $exponent);
+echo "$base raised to the power of $exponent is: " . $result . ".";
 
 
 ?>
