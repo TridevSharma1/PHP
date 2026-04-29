@@ -202,6 +202,18 @@ echo "Enter the exponent: ";
 $exponent = fgets($handle);
 $result = pow($base, $exponent);
 echo "$base raised to the power of $exponent is: " . $result . ".";
+// User input for a simple login system
+$validUsername = "admin";
+$validPassword = "password";
+echo "Enter your username: ";
+$username = fgets($handle);
+echo "Enter your password: ";
+$password = fgets($handle);
+if (trim($username) == $validUsername && trim($password) == $validPassword) {
+    echo "Login successful. Welcome, " . trim($username) . "!";
+} else {
+    echo "Login failed. Invalid username or password.";
+}
 
 
 ?>
