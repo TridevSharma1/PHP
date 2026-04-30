@@ -214,6 +214,14 @@ if (trim($username) == $validUsername && trim($password) == $validPassword) {
 } else {
     echo "Login failed. Invalid username or password.";
 }
+// calculate the area of a triangle using Heron's formula
+echo "Enter the lengths of the three sides of the triangle: ";
+$side1 = fgets($handle);
+$side2 = fgets($handle);
+$side3 = fgets($handle);
+$s = ($side1 + $side2 + $side3) / 2; // semi-perimeter
+$area = sqrt($s * ($s - $side1) * ($s - $side2) * ($s - $side3));
+echo "The area of the triangle is: " . $area . ".";
 
 
 ?>
