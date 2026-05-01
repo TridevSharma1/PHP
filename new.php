@@ -222,6 +222,26 @@ $side3 = fgets($handle);
 $s = ($side1 + $side2 + $side3) / 2; // semi-perimeter
 $area = sqrt($s * ($s - $side1) * ($s - $side2) * ($s - $side3));
 echo "The area of the triangle is: " . $area . ".";
+// calculate the distance between two points in a 2D plane
+echo "Enter the coordinates of the first point (x1, y1): ";
+$x1 = fgets($handle);
+$y1 = fgets($handle);
+echo "Enter the coordinates of the second point (x2, y2): ";
+$x2 = fgets($handle);
+$y2 = fgets($handle);
+$distance = sqrt(pow($x2 - $x1, 2) + pow($y2 - $y1, 2));
+echo "The distance between the two points is: " . $distance . ".";
+// 3d distance between two points
+echo "Enter the coordinates of the first point (x1, y1, z1): ";
+$x1 = fgets($handle);
+$y1 = fgets($handle);
+$z1 = fgets($handle);
+echo "Enter the coordinates of the second point (x2, y2, z2): ";
+$x2 = fgets($handle);
+$y2 = fgets($handle);
+$z2 = fgets($handle);
+$distance = sqrt(pow($x2 - $x1, 2) + pow($y2 - $y1, 2) + pow($z2 - $z1, 2));
+echo "The distance between the two points in 3D space is: " . $distance . ".";
 
 
 ?>
