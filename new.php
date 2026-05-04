@@ -242,6 +242,14 @@ $y2 = fgets($handle);
 $z2 = fgets($handle);
 $distance = sqrt(pow($x2 - $x1, 2) + pow($y2 - $y1, 2) + pow($z2 - $z1, 2));
 echo "The distance between the two points in 3D space is: " . $distance . ".";
+// calculate the area of a trapezoid
+echo "Enter the lengths of the two parallel sides of the trapezoid: ";  
+$base1 = fgets($handle);
+$base2 = fgets($handle);
+echo "Enter the height of the trapezoid: ";
+$height = fgets($handle);
+$area = (($base1 + $base2) / 2) * $height;
+echo "The area of the trapezoid is: " . $area . ".";
 
 
 ?>
