@@ -250,6 +250,13 @@ echo "Enter the height of the trapezoid: ";
 $height = fgets($handle);
 $area = (($base1 + $base2) / 2) * $height;
 echo "The area of the trapezoid is: " . $area . ".";
+// calculate the area of a parallelogram
+echo "Enter the base of the parallelogram: ";
+$base = fgets($handle);
+echo "Enter the height of the parallelogram: ";
+$height = fgets($handle);
+$area = $base * $height;
+echo "The area of the parallelogram is: " . $area . ".";
 
 
 ?>
