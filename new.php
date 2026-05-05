@@ -257,6 +257,11 @@ echo "Enter the height of the parallelogram: ";
 $height = fgets($handle);
 $area = $base * $height;
 echo "The area of the parallelogram is: " . $area . ".";
-
+// calculate the area of a rhombus
+echo "Enter the lengths of the two diagonals of the rhombus: ";
+$diagonal1 = fgets($handle);
+$diagonal2 = fgets($handle);
+$area = ($diagonal1 * $diagonal2) / 2;
+echo "The area of the rhombus is: " . $area . ".";
 
 ?>
