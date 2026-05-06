@@ -263,5 +263,11 @@ $diagonal1 = fgets($handle);
 $diagonal2 = fgets($handle);
 $area = ($diagonal1 * $diagonal2) / 2;
 echo "The area of the rhombus is: " . $area . ".";
-
+// calculate the area of a regular polygon
+echo "Enter the number of sides of the regular polygon: ";
+$sides = fgets($handle);
+echo "Enter the length of each side of the regular polygon: ";
+$sideLength = fgets($handle);
+$area = (pow($sideLength, 2) * $sides) / (4 * tan(pi() / $sides));
+echo "The area of the regular polygon is: " . $area . ".";
 ?>
