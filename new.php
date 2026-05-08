@@ -270,4 +270,12 @@ echo "Enter the length of each side of the regular polygon: ";
 $sideLength = fgets($handle);
 $area = (pow($sideLength, 2) * $sides) / (4 * tan(pi() / $sides));
 echo "The area of the regular polygon is: " . $area . ".";
+// calculate the area of a sector of a circle
+echo "Enter the radius of the circle: ";
+$radius = fgets($handle);
+echo "Enter the angle of the sector in degrees: ";
+$angle = fgets($handle);
+$area = (pi() * pow($radius, 2) * $angle) / 360;
+echo "The area of the sector of the circle is: " . $area . ".";
+
 ?>
