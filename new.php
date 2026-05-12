@@ -298,5 +298,10 @@ echo "Enter the height of the segment: ";
 $height = fgets($handle);
 $area = (pow($radius, 2) * acos(($radius - $height) / $radius)) - (($radius - $height) * sqrt((2 * $radius * $height) - pow($height, 2)));
 echo "The area of the segment of the circle is: " . $area . ".";
+// how to find the area of a circle using the radius
+echo "Enter the radius of the circle: ";
+$radius = fgets($handle);
+$area = pi() * pow($radius, 2);
+echo "The area of the circle is: " . $area . ".";
 
 ?>
