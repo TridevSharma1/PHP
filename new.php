@@ -303,5 +303,11 @@ echo "Enter the radius of the circle: ";
 $radius = fgets($handle);
 $area = pi() * pow($radius, 2);
 echo "The area of the circle is: " . $area . ".";
+// how to find the area of a circle using the diameter
+echo "Enter the diameter of the circle: ";
+$diameter = fgets($handle);
+$radius = $diameter / 2;
+$area = pi() * pow($radius, 2);
+echo "The area of the circle is: " . $area . ".";
 
 ?>
