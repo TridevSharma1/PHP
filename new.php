@@ -315,5 +315,12 @@ $circumference = fgets($handle);
 $radius = $circumference / (2 * pi());
 $area = pi() * pow($radius, 2);
 echo "The area of the circle is: " . $area . ".";
+// calculate the area of a circle using the area of a sector
+echo "Enter the area of the sector: ";  
+$sectorArea = fgets($handle);
+echo "Enter the angle of the sector in degrees: ";
+$angle = fgets($handle);
+$area = ($sectorArea * 360) / $angle;
+echo "The area of the circle is: " . $area . ".";
 
 ?>
