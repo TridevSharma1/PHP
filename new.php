@@ -329,5 +329,12 @@ echo "Enter the height of the segment: ";
 $height = fgets($handle);
 $area = ($segmentArea * 2) / (pow($height, 2) * acos(($height) / $height));
 echo "The area of the circle is: " . $area . ".";
+// calculate the area of a circle using the area of a sector in radians
+echo "Enter the area of the sector: ";
+$sectorArea = fgets($handle);
+echo "Enter the angle of the sector in radians: ";
+$angle = fgets($handle);
+$area = ($sectorArea * 2) / $angle;
+echo "The area of the circle is: " . $area . ".";
 
 ?>
