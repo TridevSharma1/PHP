@@ -399,5 +399,4 @@ echo "Enter the height of the segment: ";
 $height = fgets($handle);
 $area = ($segmentArea * 2) / (pow($height, 2) * acos(($height) / $height));
 echo "The area of the circle is: " . $area . ".";
-
 ?>
